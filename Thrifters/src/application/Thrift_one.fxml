@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="900.0" scaleShape="false" stylesheets="@application.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.ThriftOne_Controller">
+   <children>
+      <VBox prefHeight="600.0" prefWidth="275.0" style="-fx-background-color: #003D34;">
+         <children>
+            <AnchorPane prefHeight="244.0" prefWidth="254.0">
+               <children>
+                  <ImageView fx:id="thriftersLogo" fitHeight="150.0" fitWidth="163.0" layoutX="63.0" layoutY="47.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@Thrifters_logo.png" />
+                     </image></ImageView>
+               </children>
+            </AnchorPane>
+            <Label fx:id="welcome" alignment="CENTER" prefHeight="39.0" prefWidth="275.0" textFill="#f5f5f5">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <JFXButton onAction="#ThriftiesBank" prefHeight="55.0" prefWidth="283.0" styleClass="dashBtn" text="   THRIFTIES BANK" textFill="WHITE">
+               <VBox.margin>
+                  <Insets top="50.0" />
+               </VBox.margin>
+               <font>
+                  <Font name="FrutigerLTStd-Roman" size="15.0" />
+               </font>
+               <graphic>
+                  <FontAwesomeIconView fill="#94ebd8" glyphName="BANK" size="20" />
+               </graphic>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+               <padding>
+                  <Insets left="30.0" />
+               </padding>
+            </JFXButton>
+            <JFXButton onAction="#Account" prefHeight="55.0" prefWidth="294.0" styleClass="dashBtn" text="   ACCOUNT" textFill="WHITE">
+               <font>
+                  <Font name="FrutigerLTStd-Roman" size="15.0" />
+               </font>
+               <graphic>
+                  <FontAwesomeIconView fill="#94ebd8" glyphName="LIST" size="20" />
+               </graphic>
+               <padding>
+                  <Insets left="30.0" />
+               </padding></JFXButton>
+            <JFXButton onAction="#Settings" prefHeight="55.0" prefWidth="290.0" styleClass="dashBtn" text="   SETTINGS" textFill="WHITE">
+               <font>
+                  <Font name="FrutigerLTStd-Roman" size="15.0" />
+               </font>
+               <graphic>
+                  <FontAwesomeIconView fill="#94ebd8" glyphName="COGS" size="20" />
+               </graphic>
+               <padding>
+                  <Insets left="30.0" />
+               </padding></JFXButton>
+            <JFXButton onAction="#Logout" prefHeight="55.0" prefWidth="290.0" styleClass="dashBtn" text="   Log Out" textFill="WHITE">
+               <font>
+                  <Font name="FrutigerLTStd-Roman" size="15.0" />
+               </font>
+               <graphic>
+                  <FontAwesomeIconView fill="#94ebd8" glyphName="SIGN_OUT" size="20" />
+               </graphic>
+               <padding>
+                  <Insets left="30.0" />
+               </padding>
+            </JFXButton>
+            <Label alignment="CENTER" prefHeight="39.0" prefWidth="275.0" text="Fortfam Copyright 2018 Mark Christian Fortin" textFill="#94ebd8">
+               <VBox.margin>
+                  <Insets top="90.0" />
+               </VBox.margin>
+            </Label>
+         </children>
+      </VBox>
+      <AnchorPane fx:id="ParentAnchor" layoutX="275.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="627.0" />
+     
+   </children>
+</AnchorPane>

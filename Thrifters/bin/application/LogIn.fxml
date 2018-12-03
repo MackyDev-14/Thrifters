@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="900.0" style="-fx-background-color: #003D34;" stylesheets="@application.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.Login_Controller">
+   <children>
+      <FontAwesomeIconView fill="#94ebd8" glyphName="USER" layoutX="323.0" layoutY="312.0" size="45" wrappingWidth="38.571428298950195" />
+      <FontAwesomeIconView fill="#94ebd8" glyphName="KEY" layoutX="319.0" layoutY="375.0" rotate="90.0" size="45" />
+      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="392.0" layoutY="41.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@Thrifters_logo.png" />
+         </image>
+      </ImageView>
+      <JFXTextField fx:id="loginUser_tf" focusColor="#27e0e3" layoutX="372.0" layoutY="279.0" prefHeight="31.0" prefWidth="211.0" promptText="Username" styleClass="txtField" unFocusColor="#8de0ce">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </JFXTextField>
+      <JFXPasswordField fx:id="loginPass_tf" focusColor="#27e0e3" layoutX="372.0" layoutY="344.0" prefHeight="31.0" prefWidth="211.0" promptText="Password" styleClass="txtField" unFocusColor="#8de0ce">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </JFXPasswordField>
+      <JFXButton layoutX="424.0" layoutY="433.0" />
+      <JFXButton layoutX="419.0" layoutY="444.0" onAction="#loginUser_btn" prefHeight="31.0" prefWidth="96.0" styleClass="btn" text="Login" textFill="WHITE">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </JFXButton>
+      <Label fx:id="warningLogin" alignment="CENTER" layoutX="347.0" layoutY="399.0" prefHeight="14.0" prefWidth="241.0" textFill="#ff3a3a" visible="false" />
+   </children>
+</AnchorPane>

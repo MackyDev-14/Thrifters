@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="524.0" prefWidth="372.0" style="-fx-background-color: #003D34;" stylesheets="@application.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.NewUser_Controller">
+   <children>
+      <FontAwesomeIconView fill="#94ebd8" glyphName="USER" layoutX="58.0" layoutY="259.0" size="30" />
+      <Label layoutX="110.0" layoutY="151.0" prefHeight="40.0" prefWidth="169.0" text="Welcome Thrifter!" textFill="WHITE">
+         <font>
+            <Font name="FrutigerLTStd-Roman" size="19.0" />
+         </font>
+      </Label>
+      <FontAwesomeIconView fill="#94ebd8" glyphName="LOCK" layoutX="60.0" layoutY="331.0" size="30" />
+      <ImageView fitHeight="120.0" fitWidth="149.0" layoutX="126.0" layoutY="31.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@Thrifters_logo.png" />
+         </image>
+      </ImageView>
+      <JFXTextField fx:id="newUser_Tf" focusColor="#27e0e3" labelFloat="true" layoutX="88.0" layoutY="233.0" prefHeight="31.0" prefWidth="211.0" promptText="Username" style="-fx-prompt-text-fill: #8DE0CE;" styleClass="txtField" unFocusColor="#8de0ce">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </JFXTextField>
+      <JFXPasswordField fx:id="newPs_Tf" focusColor="#27e0e3" labelFloat="true" layoutX="88.0" layoutY="305.0" prefHeight="31.0" prefWidth="211.0" promptText="Password" style="-fx-prompt-text-fill: #8DE0CE;" styleClass="txtField" unFocusColor="#8de0ce">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </JFXPasswordField>
+      <JFXPasswordField fx:id="rtPs_Tf" focusColor="#27e0e3" labelFloat="true" layoutX="88.0" layoutY="360.0" prefHeight="31.0" prefWidth="211.0" promptText="Retype password" style="-fx-prompt-text-fill: #8DE0CE;" styleClass="txtField" unFocusColor="#8de0ce" />
+      <JFXButton layoutX="135.0" layoutY="435.0" onAction="#newUser_btn" prefHeight="40.0" prefWidth="102.0" ripplerFill="#27e0e3" styleClass="btn" text="Go Thrift!" textFill="WHITE">
+         <font>
+            <Font size="15.0" />
+         </font></JFXButton>
+      <Label fx:id="fieldErr" alignment="CENTER" layoutX="78.0" layoutY="268.0" prefHeight="14.0" prefWidth="230.0" text="This field must not be empty." textFill="#ff5050" visible="false" />
+      <Label fx:id="fieldErr2" alignment="CENTER" layoutX="83.0" layoutY="340.0" prefHeight="14.0" prefWidth="230.0" text="This field must not be empty." textFill="#ff5050" visible="false" />
+      <Label fx:id="fieldErr3" alignment="CENTER" layoutX="78.0" layoutY="398.0" prefHeight="14.0" prefWidth="230.0" textFill="#ff5050" />
+   </children>
+</AnchorPane>

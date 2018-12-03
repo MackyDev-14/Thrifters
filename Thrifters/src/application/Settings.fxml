@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="627.0" style="-fx-background-color: #94EBD8;" stylesheets="@application.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.Settings_Controller">
+   <children>
+      <JFXButton fx:id="reset_btn" layoutX="248.0" layoutY="281.0" onAction="#reset" prefHeight="39.0" prefWidth="132.0" ripplerFill="#27e0e3" styleClass="setBtn" text="RESET" textFill="WHITE" />
+   </children>
+</AnchorPane>

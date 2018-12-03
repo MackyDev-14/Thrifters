@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="627.0" style="-fx-background-color: #94EBD8;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.AccountController">
+   <children>
+      <TableView fx:id="accTable" layoutX="81.0" layoutY="68.0" prefHeight="456.0" prefWidth="465.0">
+         <columns>
+            <TableColumn fx:id="dateCol" prefWidth="75.0" text="Date" />
+            <TableColumn fx:id="timeCol" prefWidth="75.0" text="Time" />
+            <TableColumn fx:id="amntCol" prefWidth="110.0" text="Amount" />
+            <TableColumn fx:id="shCol" prefWidth="111.0" text="Savings History" />
+            <TableColumn fx:id="actCol" prefWidth="93.0" text="Action" />
+         </columns>
+      </TableView>
+   </children>
+</AnchorPane>
